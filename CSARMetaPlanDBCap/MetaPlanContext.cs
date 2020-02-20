@@ -10,7 +10,7 @@ namespace CSARMetaPlanDBCap
 {
     class MetaPlanContext : DbContext
     {
-        public MetaPlanContext(): base()
+        public MetaPlanContext(): base("CONNECTIONPARAMETER")
         {
             Database.SetInitializer<MetaPlanContext>(new CreateDatabaseIfNotExists<MetaPlanContext>());
         }
