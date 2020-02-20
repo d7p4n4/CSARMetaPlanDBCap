@@ -163,6 +163,15 @@ namespace CSARMetaPlanDBCap
 
         }
 
+        public Muvelet GetByGUIDMuvelet(string guid)
+        {
+            using(var context = new MetaPlanContext())
+            {
+                return context.Muveletek
+                    .FirstOrDefault<Muvelet>(muvelet => muvelet.GUID == guid);
+            }
+        }
+
         public void SaveProgramkod(Programkod programkod)
         {
             using (var context = new MetaPlanContext())

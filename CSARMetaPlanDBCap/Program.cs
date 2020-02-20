@@ -19,7 +19,7 @@ namespace CSARMetaPlanDBCap
             try
             {
                 ARMetaPlanDBCapMethods aRMetaPlanDBCapMethods = new ARMetaPlanDBCapMethods(connection);
-
+                /*
                 aRMetaPlanDBCapMethods.SaveAdatElem(new AdatElem()
                 {
                     Adattipus = "Teszt adattipus"
@@ -27,7 +27,9 @@ namespace CSARMetaPlanDBCap
                     , HumanNev = "teszt humannev"
                     , Irany = "teszt irany"
                     , Opcionalis = true
-                });
+                });*/
+
+                Muvelet muvelet = aRMetaPlanDBCapMethods.GetByGUIDMuvelet("guid");
             }
             catch (Exception exception)
             {
