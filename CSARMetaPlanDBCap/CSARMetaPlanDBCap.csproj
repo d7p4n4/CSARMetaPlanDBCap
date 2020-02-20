@@ -39,6 +39,7 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSAc4yUIUtilityFW, Version=1.2020.218.1, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="CSARMetaPlanFW">
       <HintPath>C:\library\LPCsharp\CSARMetaPlanFW.dll</HintPath>
     </Reference>
