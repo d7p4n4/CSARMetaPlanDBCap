@@ -53,7 +53,7 @@ namespace CSARMetaPlanDBCap
         {
             using (var context = new MetaPlanContext())
             {
-                Muvelet isExistMuvelet = context.Muveletek.Find(muvelet.GUID);
+                Muvelet isExistMuvelet = context.Muveletek.FirstOrDefault<Muvelet>(muv => muv.GUID.Equals(muvelet.GUID));
 
                 if (isExistMuvelet != null)
                 {
@@ -106,7 +106,7 @@ namespace CSARMetaPlanDBCap
                 muvelet.Keres = updatedMuvelet.Keres;
                 muvelet.ArgumentumLista = updatedMuvelet.ArgumentumLista;
                 muvelet.Nevproblemas = updatedMuvelet.Nevproblemas;
-                muvelet.ValaszTipus = updatedMuvelet.ValaszTipus;20.4
+                muvelet.ValaszTipus = updatedMuvelet.ValaszTipus;
                 context.SaveChanges();
 
             }
