@@ -11,15 +11,15 @@ namespace CSARMetaPlanDBCap
 {
     public class ARMetaPlanDBCapMethods
     {
-        private SqlConnection Connection = null;
+//        private SqlConnection Connection = null;
 
         public ARMetaPlanDBCapMethods() { }
-
+        /*
         public ARMetaPlanDBCapMethods(SqlConnection connection)
         {
             Connection = connection;
         }
-
+*/
         public void InsertMuvelet(Muvelet muvelet)
         {
             using (var context = new MetaPlanContext())
